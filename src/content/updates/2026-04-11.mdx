@@ -1,0 +1,73 @@
+import { m } from 'motion/react'
+import mercadoComprar from '../../assets/mercadoComprar.mp4'
+import mercadoVender from '../../assets/mercadoVender.mp4'
+
+export const title = 'Mercado'
+export const date = '2026-04-11'
+export const summary =
+  'Adição do mercado, correções de bugs e melhorias no balanceamento.'
+export const authors = [
+  { name: 'Noah', avatar: "https://cdn.discordapp.com/avatars/1126502933920497724/c2f69f8683432b4a8596557cf004cef3.webp?size=1024" },
+  { name: 'Brito', avatar: "https://cdn.discordapp.com/avatars/454325672517697536/64eb9d5b8d102ad1d86cd17985502160.webp?size=1024" },
+]
+
+## Mercado
+O mercado é um sistema onde os jogadores podem comprar e vender *certos items legais* entre si.
+
+### Como é que funciona?
+- Ir para o mercado que está localizado na cidade.
+- Se quiserem vender, devem depositar os items que desejam vender nos blips que estão fora do mercado
+- Depois de depositar os items que desejam vender, podem publicar o anúncio dentro do próprio mercado
+- Se quiserem comprar, podem navegar pelos anúncios publicados e comprar os items que desejarem, depois de pagarem os items vão estar no depósito do mercado.
+
+### Que items podem ser vendidos no mercado?
+Apenas alguns items podem ser vendidos no mercado, como por exemplo:
+- Minérios e metais (ferro, cobre, carvão, etc.)
+- Madeiras e derivados (troncos, tábuas, etc.)
+- Têxteis e peles (algodão, tecido, pele de veado, couro, etc.)
+- Produtos agrícolas (frutas, legumes e cereais como arroz e trigo)
+- Recursos naturais e farm lixo (borracha, látex, plástico, parafusos, papel, etc.)
+- Recursos de pesca (itens obtidos através da pesca)
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={mercadoComprar} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Compra de um item no mercado.
+  </figcaption>
+</figure>
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={mercadoVender} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Venda de um item no mercado.
+  </figcaption>
+</figure>
+
+### E os preços mínimos?
+Os preços mínimos dos items que podem ser vendidos no mercado deixam de existir, ou seja, os jogadores podem vender os items por qualquer preço que desejarem, o que pode levar a preços mais baixos do que antes, mas também pode levar a preços mais altos, dependendo da oferta e da procura.
+
+## Balanceamento
+- Ajudaste craft das oficinas
+- Ajustado craft das ammunations
+- Diminuído peso dos minérios
+
+## Outros
+- Motoclubes e Oficinas ilegais agora têm acesso ao Marine e Fridgit

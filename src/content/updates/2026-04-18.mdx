@@ -1,0 +1,84 @@
+import { m } from 'motion/react'
+import garagensVideo from '../../assets/garagens.mp4'
+import neonsVideo from '../../assets/neons.mp4'
+
+export const title = 'Garagens e Interfaces'
+export const date = '2026-04-18'
+export const summary =
+  'Rework das garagens de org, melhorias nas interfaces e várias correções de bugs.'
+export const authors = [
+  { name: 'Noah', avatar: "https://cdn.discordapp.com/avatars/1126502933920497724/c2f69f8683432b4a8596557cf004cef3.webp?size=1024" },
+  { name: 'Brito', avatar: "https://cdn.discordapp.com/avatars/454325672517697536/64eb9d5b8d102ad1d86cd17985502160.webp?size=1024" },
+]
+
+## Garagens
+- Otimizações às garagens.
+- Rework do sistema de garagens de Org:
+  - As garagens de org deixam de estar separadas por tipologias diferentes.
+  - Dentro da UI, agora podem escolher entre ver os carros da garagem de org ou da garagem pessoal.
+
+<figure style={{ marginTop: '2rem' }}>
+  <div
+    style={{
+      background: '#000',
+      borderRadius: '16px',
+      overflow: 'hidden',
+      display: 'flex',
+      justifyContent: 'center',
+    }}
+  >
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{
+        width: '100%',
+        aspectRatio: '4 / 3',
+        objectFit: 'contain',
+      }}
+    >
+      <source src={garagensVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview das garagens de org.
+  </figcaption>
+</figure>
+
+## Combate
+- Armas, balas e coletes já não queimam quando são retirados entre jogadores da mesma org.
+- Nova mecânica de disparar dentro do carro:
+  - Agora já conseguem disparar a mais de 100 km/h.
+  - Em contrapartida, existe mais recoil e a mira abana enquanto apontam a arma.
+
+
+## Veículos
+- Resolvido problema dos xenons não sincronizarem.
+- Adicionada opção de cores RGB para os neons na preview das oficinas.
+- Agora os neons podem ser controlados através do menu de car control.
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={neonsVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do controlador.
+  </figcaption>
+</figure>
+
+## Interfaces
+- Otimizações às interfaces gerais do servidor.
+
+## Outros
+- Resolvido range da MCX Spear.
+- Resolvido o item da mochila poder ser roubado.
+- Resolvidos diversos outros bugs.

@@ -1,0 +1,315 @@
+import recyclerVideo from '../../assets/recycler.mp4'
+import assaltoVideo from '../../assets/assaltos.mp4'
+import lixeiroVideo from '../../assets/lixeiros.mp4'
+import trabalhoGrupoVideo from '../../assets/trabalhogrupo.mp4'
+import interfaces from '../../assets/interfaces.mp4'
+import lesterVideo from '../../assets/lester.mp4'
+import raspadinhasVideo from '../../assets/raspadinha.mp4'
+import antiTankImage from '../../assets/antitank.webp'
+import carrosImage from '../../assets/carros.webp'
+import motasImage from '../../assets/motas.webp'
+import trocaImage from '../../assets/troca.webp'
+import lontraImage from '../../assets/lontra.webp'
+
+import { m } from 'motion/react'
+
+export const title = 'Novo tudo!'
+export const date = '2026-04-02'
+export const summary =
+  'Reworks em varias mecanicas, novos items, novos trabalhos, diversas melhorias e correções.'
+export const authors = [
+  { name: 'Noah', avatar: "https://cdn.discordapp.com/avatars/1126502933920497724/c2f69f8683432b4a8596557cf004cef3.webp?size=1024" },
+  { name: 'Brito', avatar: "https://cdn.discordapp.com/avatars/454325672517697536/64eb9d5b8d102ad1d86cd17985502160.webp?size=1024" },
+]
+
+# Rework de Abril
+
+Este update reorganiza várias mecânicas centrais ao servidor e prepara a base para o próximo ciclo de conteúdo.
+
+## O que mudou
+
+- Crafts refeitos do zero, mais simples e mais divertidos.
+- Rework Assaltos
+- Rework Trabalhos
+- Novos Veículos
+- Novas Roupas
+- Nova categoria de organização
+- Melhorias nas interfaces
+- Novas Mecânicas Gerais
+
+
+## Crafts & Items
+Decidimos refazer as receitas dos crafts do zero devido ao sistema atual ser muito complexo e difícil de balancear. O novo sistema é mais simples, mais intuitivo e mais fácil de balancear.
+
+## Reciclador & Refinaria
+Introduzimos uma mecânica de reciclagem e refinaria onde o jogador pode colocar itens numa máquina para serem automaticamente transformados noutros. O processo **continua mesmo sem a presença do jogador**, permitindo que ele siga com outras atividades enquanto os itens são processados.
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={recyclerVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do reciclador em funcionamento.
+  </figcaption>
+</figure>
+
+## Assaltos
+Os assaltos foram completamente refeitos, com novas mecânicas, incluindo um sistema de progressão. Mais detalhes devem descobrir em roleplay!
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={assaltoVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview dos assaltos em funcionamento.
+  </figcaption>
+</figure>
+
+## Novo Trabalho: Lixeiro
+Uma boa parte dos items de farm passaram a ser produzidos através de reciclagem, e para isso introduzimos o trabalho de lixeiro, onde o jogador pode coletar lixo pela cidade ganhando materiais no processo.
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    controls
+    loop
+    playsInline
+    muted
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={lixeiroVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do trabalho de lixeiro em funcionamento.
+  </figcaption>
+</figure>
+
+Podem fazer o trabalho sozinhos ou em grupo se preferirem ser mais eficientes.
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    controls
+    loop
+    playsInline
+    muted
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={trabalhoGrupoVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Criação de grupo para o trabalho de lixeiro.
+  </figcaption>
+</figure>
+
+## Lester
+O Lester é um personagem enigmático que através dos seus satélites consegue monitorar spots. Membros de organizações podem-lhe pedir informações.
+<figure style={{ marginTop: '2rem' }}>
+  <div
+    style={{
+      background: '#000',
+      borderRadius: '16px',
+      overflow: 'hidden',
+      display: 'flex',
+      justifyContent: 'center',
+    }}
+  >
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{
+        width: '100%',
+        aspectRatio: '16 / 9',
+        objectFit: 'contain',
+      }}
+    >
+      <source src={lesterVideo} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <figcaption style={{ marginTop: '0.75rem', color: '#facc15', fontSize: '0.95rem' }}>
+    {'Fase experimental'}
+  </figcaption>
+</figure>
+
+
+
+## Carros, Motas & Roupas
+Diversos veículos e roupas foram adicionados, oficinas e motoclubes receberam uma série de carros e motas para venderem diretamente aos jogadores.
+<figure>
+  <img
+    src={carrosImage}
+    alt="Preview de carros e motas"
+    style={{ width: '100%', borderRadius: '16px' }}
+  />
+</figure>
+<figure>
+  <img
+    src={motasImage}
+    alt="Preview de carros e motas"
+    style={{ width: '100%', borderRadius: '16px' }}
+  />
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Diversos veículos e roupas disponíveis.
+  </figcaption>
+</figure>
+
+## Interface
+Houveram diversas mudanças às interfaces para as tornar mais intuitivas e escaláveis entre diversas resoluções.
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={interfaces} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview da nova mudança de roupa.
+  </figcaption>
+</figure>
+
+## Caça Legal & Caça Ilegal
+As mecânicas da caça legal foram ajustadas para serem mais interessantes e foi adicionada uma caça ilegal, que terão de desvendar por conta própria.
+<figure>
+  <img
+    src={lontraImage}
+    alt="Preview de um novo animal"
+    style={{ width: '100%', borderRadius: '16px' }}
+  />
+</figure>
+
+## Raspadinhas
+As raspadinhas são um item que pode ser obtido nas árvores da sorte, coleções de restaurantes e através do VIP Mensal. Elas podem ser raspadas para ganhar prémios como dinheiro, coins, e até mesmo carros exclusivos.
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={raspadinhasVideo} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview das raspadinhas.
+  </figcaption>
+</figure>
+## Antitank
+O cálculo de dano de headshot foi ajustado para ser mais dinâmico, não passa simplesmente a contar como body a partir de certa distância.
+<figure>
+  <img
+    src={antiTankImage}
+    alt="Preview do antitank"
+    style={{ width: '100%', borderRadius: '16px' }}
+  />
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Diversos heads a diferentes distâncias.
+  </figcaption>
+</figure>
+
+## Diluição de Items
+Com o rework dos crafts, a escala de vários items foi ajustada.
+
+Antes, alguns crafts exigiam quantidades muito altas, o que dificultava o balanceamento. Agora, os valores foram normalizados para números menores e mais consistentes, retendo o custo geral equivalente.
+
+Items antigos com quantidades exageradas poderão ser trocados por novos através de uma mecânica de conversão.
+Exemplo (antes vs depois):
+
+- Antes: Item A → 120x pólvora + 80x ferro
+- Depois: Item A → 2x pólvora + 1x ferro
+
+O custo continua equilibrado, apenas foi ajustado para uma escala mais prática.
+
+<figure>
+  <div
+    style={{
+      background: '#000',
+      borderRadius: '16px',
+      overflow: 'hidden',
+      display: 'flex',
+      justifyContent: 'center',
+    }}
+  >
+    <img
+      src={trocaImage}
+      alt="Preview da troca de items"
+      style={{
+        width: '100%',
+        aspectRatio: '16 / 9',
+        objectFit: 'contain',
+      }}
+    />
+  </div>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Troca de items antigos por novos através de uma nova mecânica de troca.
+  </figcaption>
+</figure>
+
+## Changelogs Completo
+
+```txt
+- Rework crafts
+- Rework assaltos
+- Rework trabalhos
+- Rework caça
+
+- Novo trabalho: lixeiro
+- Novo sistema de boombox/rádio carro
+- Novo sistema de raspadinhas
+
+- Novos carros de stock
+- Novos carros, motas e roupas
+
+- Nova esquadra da LSPD
+- Nova loja de caça
+- Novo restaurante do Burgershot
+
+- Adicionado novo modo ao FPS On
+- Adicionado tranquilizante
+- Adicionado novo modo de armas ao Arcade (G3 e .50)
+- Adicionada opção de colete no Arcade
+- Adicionado mercado negro
+- Adicionado firma de advogados
+- Adicionado Fridgit às redzones
+- Adicionado /me novamente
+- Adicionado comando "transferircoins" para transferir coins para o personagem secundário
+- Adicionada camera térmica aos helicópteros da polícia
+- Melhorias a diversas interfaces
+- Melhorias ao sistema de alerta de tiro da polícia
+- Comservs mais fáceis
+- Agora consegues conduzir com o inventário aberto
+- Agora consegues andar, correr e saltar com rádio na mão
+- Lavagem de dinheiro passa a ser pública
+- Rádio e Telémovel não funcionam debaixo de água
+- Combustível agora é consumido mais lentamente
+- Veículos já não explodem por causa de tiros
+- Veículos levam muito mais dano de balas (está nativo do GTA agora)
+
+- Removido Armazens
+- Removidos mercados de Cayo
+- Removidos diversos props explosivos de redzones
+- Resolvido crashes após morrer e entrar/saír de casa
+- Resolvido o reparar VIP não dar 10% de gasolina
+- Resolvido conseguir guardar helicopteros em garagens normais
+- Resolvido os carros não virem sempre limpos
+- Resolvido dano do carro estar diferente para o passageiro e motorista
+- Resolvidos diversos bugs
+```

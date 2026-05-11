@@ -1,0 +1,104 @@
+import { m } from 'motion/react'
+import mercadoHistorico from '../../assets/mercadoHistorico.png'
+import radial from '../../assets/radial.mp4'
+import roupasOrg from '../../assets/roupasOrg.mp4'
+
+export const title = 'Sistemas, Economia e QoL'
+export const date = '2026-04-26'
+export const summary =
+  'Rework de sistemas centrais, ajustes de balanceamento e melhorias de qualidade de vida.'
+export const authors = [
+  { name: 'Noah', avatar: "https://cdn.discordapp.com/avatars/1126502933920497724/c2f69f8683432b4a8596557cf004cef3.webp?size=1024" },
+  { name: 'Brito', avatar: "https://cdn.discordapp.com/avatars/454325672517697536/64eb9d5b8d102ad1d86cd17985502160.webp?size=1024" },
+]
+
+## Destaque
+Neste update, removemos os sistemas antigos de radial e de target e fundimos ambos num único sistema mais consistente.
+O objetivo é simplificar interações do dia a dia, reduzir fricção entre mecânicas e facilitar ações rápidas.
+
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={radial} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do novo sistema de radial em funcionamento.
+  </figcaption>
+</figure>
+
+## Reworks
+- Adicionado um novo sistema de radial que funde as funcionalidades dos sistemas anteriores.
+- Rework do algoritmo de loot das crates do Ilhéu e do Cargueiro.
+- Rework dos props da Polícia.
+- Melhorado o sistema dos reboques.
+
+## Adições
+- Chefes de organização passam a poder criar roupas para a própria organização.
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={roupasOrg} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do novo sistema de roupas de organização em funcionamento.
+  </figcaption>
+</figure>
+
+- Adicionado menu na tecla `F5`, onde os players podem consultar:
+  - Coins
+  - Roupas VIP
+  - Cooldowns dos assaltos
+  - Pinturas VIP
+  - Ações relacionadas com o trabalho (ex.: passar faturas)
+
+- Adicionado novo bairro em Paleto.
+- Adicionadas novas favelas.
+- Adicionada loja com águas e sandes na prisão.
+- Adicionado novo MLO para todas as lojas LTD.
+- Adicionado histórico de preços no mercado.
+  - Para consultar, basta carregar com o botão direito em qualquer item do mercado.
+
+<figure style={{ marginTop: '2rem' }}>
+  <img
+    src={mercadoHistorico}
+    alt="Preview do histórico de preços no mercado"
+    style={{ width: '100%', borderRadius: '16px' }}
+  />
+</figure>
+
+## Balanceamento
+- Uma caixa de pesca passa a precisar de 15 peixes (antes: 10).
+- Aumentado o drop rate de látex.
+- Buff na quantidade de enxofre minerado e extraído.
+- Buff na quantidade de itens gerados pelo reciclador.
+- Aumentada a durabilidade da serra e da britadeira.
+- Buff de 25% no espaço do inventário.
+- Slots do inventário passam de 50 para 20.
+- O tempo de morte foi reduzido para 5 minutos em todos os locais.
+- VIP Mensal Kuma passa a ter 4 minutos de morte.
+
+## Qualidade de Vida
+- Ao ires para comunitário, o teu inventário já não é limpo.
+- O supermercado dos restaurantes passa a estar em Paleto.
+- Agora já podes abrir bagageiras de veículos sem teres de estar de frente para a bagageira.
+- Blips de propriedades à venda agora aparecem sempre no mapa.
+
+## Remoções
+- Removido o sistema antigo de radial e de target.
+- Removidas favelas antigas com problemas.
+
+## Correções
+- Resolvidos diversos bugs.
