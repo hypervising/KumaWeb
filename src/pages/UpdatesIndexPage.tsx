@@ -14,7 +14,7 @@ function UpdatesIndexPage() {
         initial={{ opacity: 0 }}
         transition={{ duration: 0.26, ease: 'easeOut' }}
       >
-        <UpdatesHero title='Updates' subtitle='As novidades no Kuma.' />
+        <UpdatesHero title='Updates' subtitle='As novidades no Kuma' />
         <UpdatesList items={updates} />
       </motion.div>
     </PageShell>
