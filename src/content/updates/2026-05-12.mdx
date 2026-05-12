@@ -1,0 +1,102 @@
+import { m } from 'motion/react'
+
+import tetris from '../../assets/tetris.mp4'
+import snake from '../../assets/snake.mp4'
+import craftInv from '../../assets/craftInv.mp4'
+import farmInv from '../../assets/farmInv.mp4'
+
+export const title = 'Jogos, Organizações e Balanceamento'
+export const date = '2026-05-12'
+export const summary =
+  'Novos minijogos no telemóvel, melhorias em craft e farm, ajustes de economia e várias correções.'
+export const authors = [
+  { name: 'Noah', avatar: "https://cdn.discordapp.com/avatars/1126502933920497724/c2f69f8683432b4a8596557cf004cef3.webp?size=1024" },
+  { name: 'Brito', avatar: "https://cdn.discordapp.com/avatars/454325672517697536/64eb9d5b8d102ad1d86cd17985502160.webp?size=1024" },
+]
+
+## Adições
+- Adicionados 2 novos jogos no telemóvel: `Tetris` e `Snake`.
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={tetris} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do novo jogo de Tetris no telemóvel.
+  </figcaption>
+</figure>
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={snake} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do novo jogo de Snake no telemóvel.
+  </figcaption>
+</figure>
+
+## Organizações
+- Chefes de organização agora podem definir a percentagem de comissão que os empregados recebem por fatura.
+
+## Craft e Farm
+- O craft de pólvora e kevlar passa a estar acessível diretamente no inventário.
+- A mecânica de ensacar droga também passa a estar disponível diretamente no inventário.
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={craftInv} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption style={{ marginTop: '0.75rem', color: '#a1a1a1', fontSize: '0.95rem' }}>
+    Preview do novo sistema de craft no inventário em funcionamento.
+  </figcaption>
+</figure>
+
+- Agora já podem colocar itens dentro das carrinhas enquanto estão a farmar ou a craftar.
+
+<figure style={{ marginTop: '2rem' }}>
+  <video
+    autoPlay
+    loop
+    muted
+    playsInline
+    style={{ width: '100%', borderRadius: '16px' }}
+  >
+    <source src={farmInv} type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</figure>
+
+- Agora apanhas o lixo mais rapidamente.
+- Trocado o spot de craft de peças de arma.
+- Removido o spot de kevlar e pólvora.
+
+## Balanceamento
+- Os helicópteros agora são mais rápidos, alguns chegando a mais de 300 km/h.
+- Morrer à fome ou sede passa a ser muito mais lento.
+  - Quando isso acontece, o jogador fica com um efeito de atordoamento.
+- Os ciclos do reciclador agora demoram mais tempo.
+- Buff na quantidade de eletrónicos obtidos no lixo.
+- Nerf na venda dos itens de assaltos.
+
+## Correções
+- Resolvidos diversos bugs.
