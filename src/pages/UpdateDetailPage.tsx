@@ -38,6 +38,22 @@ function UpdateDetailPage() {
     }
   }, [expandedImage])
 
+  useEffect(() => {
+    const pageTitle = `${update.title} | Kuma Updates`
+    const previousTitle = document.title
+
+    document.title = pageTitle
+    upsertMetaTag('name', 'description', update.description)
+    upsertMetaTag('property', 'og:title', pageTitle)
+    upsertMetaTag('property', 'og:description', update.description)
+    upsertMetaTag('name', 'twitter:title', pageTitle)
+    upsertMetaTag('name', 'twitter:description', update.description)
+
+    return () => {
+      document.title = previousTitle
+    }
+  }, [update.description, update.title])
+
   return (
     <PageShell>
       <motion.article
@@ -93,6 +109,20 @@ function UpdateDetailPage() {
       ) : null}
     </PageShell>
   )
+}
+
+function upsertMetaTag(attributeName: 'name' | 'property', attributeValue: string, content: string) {
+  let metaTag = document.head.querySelector<HTMLMetaElement>(
+    `meta[${attributeName}="${attributeValue}"]`,
+  )
+
+  if (!metaTag) {
+    metaTag = document.createElement('meta')
+    metaTag.setAttribute(attributeName, attributeValue)
+    document.head.appendChild(metaTag)
+  }
+
+  metaTag.setAttribute('content', content)
 }
 
 export default UpdateDetailPage
