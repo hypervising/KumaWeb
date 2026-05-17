@@ -4,7 +4,7 @@ import KumaLogo from './KumaLogo'
 
 function TopBar() {
   return (
-    <header className='w-full border-b border-accent/70 bg-secondary/85 backdrop-blur-sm'>
+    <header className='w-full border-b border-accent/70 bg-secondary'>
       <div className='mx-auto grid h-12 w-full max-w-6xl grid-cols-[1fr_auto_1fr] items-center px-4 sm:px-6'>
         <div />
 
